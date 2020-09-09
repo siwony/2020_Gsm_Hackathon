@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    margin-left: 14vh;
+}
+h1 > a > img{
+    position: absolute;
+    width: 12vh;
+    height: 7vh;
+    margin-top: 1vh;
+    z-index: 4 !important;
+}
+.menu_wrap{
+    position: absolute;
+    margin-left: 13vh;
+    margin-top: 4vh;
+    font-size: medium;
+    z-index: 4 !important;
+}
+.menu > a {
+    position: relative;
+    float: left;
+    margin-left: 3.6vh;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    color: #ffff;
+    text-shadow:  1px 1px rgb(130, 130, 130);
+    text-decoration: none;
+}
+.background > img{
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: -10 !important;
+    filter: brightness(50%);
+}
+.back_ment_wrap > span {
+    position: absolute;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: xxx-large;
+    text-align: center;
+    color: #ffff;
+    width: 100%;
+    max-height: 400px;
+    top: 500px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.mar_span{
+    margin-top: 76px;
+}
+.swipe > span{
+    position: absolute;
+    margin-top: 86vh;
+    margin-left: 82.9vh;
+    color: #ffff;
+}
+.swipe > img{
+    position: absolute;
+    margin-top: 90vh;
+    margin-left: 83.7vh;
+}
