@@ -72,32 +72,53 @@ h1 > a > img{
     display: block;
     width: 2.5vw;
     margin: 0 auto;
-    margin-top: 0.8vw;
     animation: moveUpDown 0.5s linear infinite;
     animation-direction: alternate;
     animation-fill-mode: forwards;
 }   
 /*더 알아보기 아이콘 에니메이션*/
 @keyframes moveUpDown{
-    0%{margin-top: 0.8vw;}
-    50%{margin-top: 1vw;}
-    80%{margin-top: 1.2vw;}
-    97%{margin-top: 1.4vw;}
-    100%{margin-top: 1.4vw;}
+    0%{padding-top: 0.8vw;}
+    50%{padding-top: 1vw;}
+    80%{padding-top: 1.2vw;}
+    97%{padding-top: 1.4vw;}
+    100%{padding-top: 1.4vw;}
 }
 /*동백제 역사*/
-#festival_wrap{padding: 0 5vw 0 5vw;}
-#festival_wrap > h2{margin-bottom: 4vw;}
-#festival_wrap img{
+#fest_wrap{padding: 0 12vw}
+#fest_wrap > h2{margin-bottom: 3vw;}
+#fest_wrap > h2 > img{
     display: block;
-    width: 30%;
-    margin: 0 auto;
+    width: 30%;    margin: 0 auto;
 }
-#festival_bundle{
+#fest_bundle{
     width: 100%;
 }
-.festival_item{
-    width: 100%;  height: 18vw;
-    margin-bottom: 10px;
-    background: lightskyblue;
+.fest_item{
+    width: 100%;  height: 13vw;
 }
+.fest_item > img{
+    width: 20%;
+}
+.fest_img_wrap{
+    display: inline-block;
+    height: 100%;
+    background-color: lightslategray;
+    margin-right: 2vw;
+    float: left;
+}
+.fest_item > h3{
+    font-size: 1.6vw;
+    margin-bottom: 1vw;
+}
+.fest_item > p{
+    font-size: 1.2vw;
+}
+.fest_item:nth-child(2) >  .fest_img_wrap{
+    margin: 0 0 0 2vw ;
+    float: right;
+}
+.fest_item:nth-child(2) > h3, .fest_item:nth-child(2) > p{
+    text-align: right;
+}
+.fest_img_wrap > img{height: 100%;}
