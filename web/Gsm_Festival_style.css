@@ -1,66 +1,77 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0;  padding: 0;
     box-sizing: border-box;
 }
-.top{
-    margin-left: 14vh;
-}
-h1 > a > img{
-    position: absolute;
-    width: 12vh;
-    height: 7vh;
-    margin-top: 1vh;
-    z-index: 4 !important;
-}
-.menu_wrap{
-    position: absolute;
-    margin-left: 13vh;
-    margin-top: 4vh;
-    font-size: medium;
-    z-index: 4 !important;
-}
-.menu > a {
-    position: relative;
-    float: left;
-    margin-left: 3.6vh;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: bold;
-    color: #ffff;
-    text-shadow:  1px 1px rgb(130, 130, 130);
+a{
     text-decoration: none;
 }
+header{
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+}
+h1 > a > img{
+    width: 120px;
+    margin: 0 2% 0 2%;
+    float: left;
+}
+.menu{
+    display: flex;
+}
+.menu > a{
+    width: 100px;
+    text-align: center;
+    line-height: 72.33px;
+    color: #ffff;
+}
+.background{
+    position: relative;
+    display: inline-block;
+}
 .background > img{
-    position: absolute;
     max-width: 100%;
     height: auto;
     overflow: hidden;
     z-index: -10 !important;
     filter: brightness(50%);
 }
-.back_ment_wrap > span {
+.back_ment_wrap{
+    display: inline-block;
     position: absolute;
-    font-family: 'Frank Ruhl Libre', serif;
-    font-size: xxx-large;
-    text-align: center;
-    color: #ffff;
+    top:50%;  left:50%;
+    transform: translate(-50%, -50%);
+}
+.back_ment_wrap > span {
     width: 100%;
+    color: #ffff;
     max-height: 400px;
-    top: 500px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 3vw;
+    text-align: center;
     font-weight: 500;
     opacity: 0.8;
 }
-.mar_span{
-    margin-top: 76px;
-}
-.swipe > span{
+.more{
     position: absolute;
-    margin-top: 86vh;
-    margin-left: 82.9vh;
+    display: inline-block;
+    top: 100%; left: 50%;
+    transform: translate(-50%, -100%);
+}
+.mar_span{
+    display: inline-block;
+    margin: 0 auto;
+}
+.swipe{
+    position: relative;
+    margin-bottom: 20px;
+}
+.swipe > p{
     color: #ffff;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .swipe > img{
-    position: absolute;
-    margin-top: 90vh;
-    margin-left: 83.7vh;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.3vw;
 }
