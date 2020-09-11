@@ -10,31 +10,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--메뉴-->
     <header>
-        <div class="top">
-            <h1><a><img src="../img/gsm_h1.png" alt="h1_logo"></a></h1>
-            <div class="menu_wrap">
-                <div class="menu">
-                    <a href="#"><ul>공지사항</ul></a>
-                    <a href="#"><ul>소식</ul></a>
-                    <a href="#"><ul>행사안내</ul></a>
-                    <a href="#"><ul>공연</ul></a>
+        <h1><a href="#"><img src="../img/gsm_h1.png" alt="h1_logo"></a></h1>
+        <nav>
+            <div class="menu">
+                <a href="#">공지사항</a>
+                <a href="#">소식</a>
+                <a href="#">행사안내</a>
+                <a href="#">공연</a>
+            </div>
+        </nav>
+    </header>
+    <!---------------------------contents start!!----------------------------->
+    <section>
+        <!--main part-->
+        <section>
+            <div class="background">
+                <img src="../img/graduation.jpg" alt="back_img"><!--동영상으로 대체-->
+                <div class="back_ment_wrap">
+                    <span>Gwangju Software Meister Highschool</span><br>
+                    <span class="mar_span">Regular Festival</span>
+                </div>
+                <!--더 알아보기-->
+                <div class="more">
+                    <a href="#fest_wrap"><!--fest == fesival-->
+                        <div class="swipe">
+                            <p>더 알아보기</p>
+                            <img src="../img/more.png" alt="swipe_up">
+                        </div>
+                    </a>
                 </div>
             </div>
-    </div>
-    <div class="background">
-        <img src="../img/graduation.jpg" alt="back_img">
-        <div class="back_ment_wrap">
-            <span>Gwangju Software Meister Highschool</span><br>
-            <span class="mar_span">Regular Festival</span>
-        </div>
-        <div class="more">
-            <div class="swipe">
-                <span>더 알아보기</span>
-                <img src="../img/more.png" alt="swipe_up">
-            </div>
-        </div>
-    </div>
-    </header>
+        </section>
+        <!--축제 history part-->
+        <section id="fest_wrap">
+            <h2><img src="../img/gsm_header.png" alt=""></h2>
+            <nav id="fest_bundle">
+                <div class="fest_item">
+                    <div class="fest_img_wrap">
+                        <img src="../img/동백제_2018.jpg" alt="2018 동백제">
+                        <object data="../img/gsm.svg" type="image/svg+xml" aria-label="gsm_logo_img"></object>
+                    </div>
+                    <h3>2018 동백제</h3>
+                    <p>학생회들의 열렬한 연기와 함께<br>첫 GSM 축제의 시작</p>
+                </div>
+                <div class="fest_item">
+                    <div class="fest_img_wrap">
+                        <img src="../img/동백제_2019.jpg" alt="2019 동백제">
+                        <object data="../img/gsm.svg" type="image/svg+xml" aria-label="gsm_logo_img"></object>
+                    </div>
+                    <h3>2019 동백제</h3>
+                    <p>학생회들의 열렬한 연기와 함께<br>첫 GSM 축제의 시작</p>
+                </div>
+                <div class="fest_item">
+                    <div class="fest_img_wrap">
+                        <img src="../img/동백제_2019.jpg" alt="2020 동백제">
+                        <object data="../img/gsm.svg" type="image/svg+xml" aria-label="gsm_logo_img"></object>
+                        <p>준비중</p>
+                    </div>
+                    <h3>2020 동백제</h3>
+                    <p>학생회들의 열렬한 연기와 함께<br>첫 GSM 축제의 시작</p>
+                </div>
+            </nav>
+        </section>
+        <section id="fest_notice"><!--동백제 안내 메뉴-->
+            <p>Check the notice</p>
+            <h2>2020 동백제 안내</h2>
+            <span id="search_box">
+                <input id="search_bar" type="search"><input id="search_btn" type="submit" value=" ">
+            </span>
+        </section>
+    </section>
+    
+    <footer>
+    </footer>
 </body>
 </html>
