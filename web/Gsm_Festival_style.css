@@ -99,10 +99,17 @@ h1 > a > img{
 .fest_item{width: 100%;  height: 13vw;}
 .fest_img_wrap{
     display: inline-block;
+    position: relative;
     height: 100%;
-    background-color: lightslategray;
     margin-right: 2vw;
     float: left;
+}
+.fest_img_wrap > object{
+    position: absolute;
+    left: 0;
+    width: 4vw;
+    transform: translate(-54%, -33%);
+    z-index: 2;
 }
 .fest_item > h3{
     font-size: 1.6vw;
@@ -118,15 +125,18 @@ h1 > a > img{
 .fest_item:nth-child(2) > h3, .fest_item:nth-child(2) > p{
     text-align: right;
 }
+.fest_item:nth-child(2) object{
+    left: 100%;
+    transform: translate(-48%, -33%) rotateY(180deg);
+}
 /**/
 /*준비중*/
-.fest_item:nth-child(3) > .fest_img_wrap{position: relative;}
 .fest_item:nth-child(3) img{opacity: 30%;} 
 .fest_item:nth-child(3) > .fest_img_wrap > p{
     position: absolute;
     top: 50%;  left: 50%;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 2vw;
     transform: translate(-50%, -50%);
 } 
 /******/
