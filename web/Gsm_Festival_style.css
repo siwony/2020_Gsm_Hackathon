@@ -139,4 +139,40 @@ h1 > a > img{
     font-size: 2vw;
     transform: translate(-50%, -50%);
 } 
-/******/
+/***동백제 안내***/
+#fest_notice {padding: 0 12vw}
+/**메뉴 텍스트**/
+#fest_notice > p {
+    font-size: 1vw;
+    margin-top: 6vw;
+}
+#fest_notice > h2 {
+    font-size: 2vw;
+}
+/** 검색 박스 **/
+#search_box > input {
+    margin-top: 0.8vw;
+    height: 2.2vw;
+    outline: none;
+    border: 0.2vw solid lightskyblue;
+}
+/* 검색 바 */
+#search_box > #search_bar {
+    width: 24vw;
+    border-top-left-radius: 0.4vw;
+    border-bottom-left-radius: 0.4vw;
+    font-size: 1.2vw;
+    border-right: none;
+    padding-left: 0.2vw;
+}
+/* 검색 버튼 */
+#search_box > #search_btn {
+    width: 3vw;
+    border-top-right-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+    font-size: 1.2vw;
+    background: lightskyblue;
+}
+#search_box > #search_btn:hover {
+    cursor: pointer;
+}
