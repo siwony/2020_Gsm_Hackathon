@@ -121,4 +121,15 @@ h1 > a > img{
 .fest_item:nth-child(2) > h3, .fest_item:nth-child(2) > p{
     text-align: right;
 }
+/*준비중*/
+.fest_item:nth-child(3) > .fest_img_wrap{position: relative;}
+.fest_item:nth-child(3) img{opacity: 30%;} 
+.fest_item:nth-child(3) > .fest_img_wrap > p{
+    position: absolute;
+    top: 50%;  left: 50%;
+    font-weight: bold;
+    font-size: xxx-large;
+    transform: translate(-50%, -50%);
+} 
+/**/
 .fest_img_wrap > img{height: 100%;}
