@@ -1,5 +1,6 @@
 *{margin: 0;  padding: 0;  box-sizing: border-box;}
 a{text-decoration: none;}
+/********************메뉴***********************/
 header{
     position: fixed;
     display: inline-block;
@@ -18,14 +19,15 @@ h1 > a > img{
     line-height: 72.33px;
     color: #ffff;
 }
-/*section*/
-/*main_part*/
+/**********************contents********************/
+/****main_part*****/
 .background{
     position: relative;
     display: inline-block;
     overflow: hidden;
     margin-bottom: 5vw;
 }
+/*나중에 배경에 동영상 넣을꺼임*/
 .background > img{
     max-width: 100%;
     height: auto;
@@ -49,6 +51,7 @@ h1 > a > img{
     font-weight: 500;
     opacity: 0.8;
 }
+/*더알아보기*/
 .more{
     position: absolute;
     display: inline-block;
@@ -76,6 +79,7 @@ h1 > a > img{
     animation-direction: alternate;
     animation-fill-mode: forwards;
 }   
+/**/
 /*더 알아보기 아이콘 에니메이션*/
 @keyframes moveUpDown{
     0%{padding-top: 0.8vw;}
@@ -84,22 +88,15 @@ h1 > a > img{
     97%{padding-top: 1.4vw;}
     100%{padding-top: 1.4vw;}
 }
-/*동백제 역사*/
+/***********************동백제 역사***********************/
 #fest_wrap{padding: 0 12vw}
 #fest_wrap > h2{margin-bottom: 3vw;}
 #fest_wrap > h2 > img{
     display: block;
     width: 30%;    margin: 0 auto;
 }
-#fest_bundle{
-    width: 100%;
-}
-.fest_item{
-    width: 100%;  height: 13vw;
-}
-.fest_item > img{
-    width: 20%;
-}
+#fest_bundle{width: 100%;}
+.fest_item{width: 100%;  height: 13vw;}
 .fest_img_wrap{
     display: inline-block;
     height: 100%;
@@ -111,9 +108,9 @@ h1 > a > img{
     font-size: 1.6vw;
     margin-bottom: 1vw;
 }
-.fest_item > p{
-    font-size: 1.2vw;
-}
+.fest_item > p{font-size: 1.2vw;}
+.fest_img_wrap > img{height: 100%;}
+/*2019 동백제 부분*/
 .fest_item:nth-child(2) >  .fest_img_wrap{
     margin: 0 0 0 2vw ;
     float: right;
@@ -121,6 +118,7 @@ h1 > a > img{
 .fest_item:nth-child(2) > h3, .fest_item:nth-child(2) > p{
     text-align: right;
 }
+/**/
 /*준비중*/
 .fest_item:nth-child(3) > .fest_img_wrap{position: relative;}
 .fest_item:nth-child(3) img{opacity: 30%;} 
@@ -131,5 +129,4 @@ h1 > a > img{
     font-size: xxx-large;
     transform: translate(-50%, -50%);
 } 
-/**/
-.fest_img_wrap > img{height: 100%;}
+/******/
