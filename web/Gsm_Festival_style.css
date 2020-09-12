@@ -1,10 +1,6 @@
-*{
-    margin: 0;  padding: 0;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-}
+*{margin: 0;  padding: 0;  box-sizing: border-box;}
+a{text-decoration: none;}
+/********************메뉴***********************/
 header{
     position: fixed;
     display: inline-block;
@@ -16,24 +12,27 @@ h1 > a > img{
     margin: 0 2% 0 2%;
     float: left;
 }
-.menu{
-    display: flex;
-}
+.menu{display: flex;}
 .menu > a{
     width: 100px;
     text-align: center;
     line-height: 72.33px;
     color: #ffff;
 }
+/**********************contents********************/
+/****main_part*****/
 .background{
     position: relative;
     display: inline-block;
+    overflow: hidden;
+    margin-bottom: 5vw;
 }
+/*나중에 배경에 동영상 넣을꺼임*/
 .background > img{
     max-width: 100%;
     height: auto;
     overflow: hidden;
-    z-index: -10 !important;
+    z-index: -1;
     filter: brightness(50%);
 }
 .back_ment_wrap{
@@ -52,6 +51,7 @@ h1 > a > img{
     font-weight: 500;
     opacity: 0.8;
 }
+/*더알아보기*/
 .more{
     position: absolute;
     display: inline-block;
@@ -64,14 +64,115 @@ h1 > a > img{
 }
 .swipe{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .swipe > p{
     color: #ffff;
+    font-size: 1vw;
     font-family: 'Nanum Gothic', sans-serif;
 }
 .swipe > img{
     display: block;
+    width: 2.5vw;
     margin: 0 auto;
-    margin-top: 0.3vw;
+    animation: moveUpDown 0.5s linear infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}   
+/**/
+/*더 알아보기 아이콘 에니메이션*/
+@keyframes moveUpDown{
+    0%{padding-top: 0.8vw;}
+    50%{padding-top: 1vw;}
+    80%{padding-top: 1.2vw;}
+    97%{padding-top: 1.4vw;}
+    100%{padding-top: 1.4vw;}
+}
+/***********************동백제 역사***********************/
+#fest_wrap{padding: 0 12vw}
+#fest_wrap > h2{margin-bottom: 3vw;}
+#fest_wrap > h2 > img{
+    display: block;
+    width: 30%;    margin: 0 auto;
+}
+#fest_bundle{width: 100%;}
+.fest_item{width: 100%;  height: 13vw;}
+.fest_img_wrap{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    margin-right: 2vw;
+    float: left;
+}
+.fest_img_wrap > object{
+    position: absolute;
+    left: 0;
+    width: 4vw;
+    transform: translate(-54%, -33%);
+    z-index: 2;
+}
+.fest_item > h3{
+    font-size: 1.6vw;
+    margin-bottom: 1vw;
+}
+.fest_item > p{font-size: 1.2vw;}
+.fest_img_wrap > img{height: 100%;}
+/*2019 동백제 부분*/
+.fest_item:nth-child(2) >  .fest_img_wrap{
+    margin: 0 0 0 2vw ;
+    float: right;
+}
+.fest_item:nth-child(2) > h3, .fest_item:nth-child(2) > p{
+    text-align: right;
+}
+.fest_item:nth-child(2) object{
+    left: 100%;
+    transform: translate(-48%, -33%) rotateY(180deg);
+}
+/**/
+/*준비중*/
+.fest_item:nth-child(3) img{opacity: 30%;} 
+.fest_item:nth-child(3) > .fest_img_wrap > p{
+    position: absolute;
+    top: 50%;  left: 50%;
+    font-weight: bold;
+    font-size: 2vw;
+    transform: translate(-50%, -50%);
+} 
+/***동백제 안내***/
+#fest_notice {padding: 0 12vw}
+/**메뉴 텍스트**/
+#fest_notice > p {
+    font-size: 1vw;
+    margin-top: 6vw;
+}
+#fest_notice > h2 {
+    font-size: 2vw;
+}
+/** 검색 박스 **/
+#search_box > input {
+    margin-top: 0.8vw;
+    height: 2.2vw;
+    outline: none;
+    border: 0.2vw solid lightskyblue;
+}
+/* 검색 바 */
+#search_box > #search_bar {
+    width: 24vw;
+    border-top-left-radius: 0.4vw;
+    border-bottom-left-radius: 0.4vw;
+    font-size: 1.2vw;
+    border-right: none;
+    padding-left: 0.2vw;
+}
+/* 검색 버튼 */
+#search_box > #search_btn {
+    width: 3vw;
+    border-top-right-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+    font-size: 1.2vw;
+    background: lightskyblue;
+}
+#search_box > #search_btn:hover {
+    cursor: pointer;
 }
